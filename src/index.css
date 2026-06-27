@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2c5282;
+  --color-primary-dark: #1e3a5f;
+  --color-accent: #dd6b20;
+  --color-accent-light: #f6ad55;
+  --color-neutral-light: #f7fafc;
+  --color-neutral-dark: #2d3748;
+}
+
+body {
+  @apply text-neutral-dark bg-white font-sans;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-primary font-medium;
+}
