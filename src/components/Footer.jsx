@@ -41,6 +41,7 @@ const Footer = () => {
               {[
                 { name: 'About Us', path: '/about' },
                 { name: 'Our Products', path: '/products' },
+                { name: 'Brand Partners', path: '/brands' },
                 { name: 'Manufacturing', path: '/manufacturing' },
                 { name: 'Quality Standards', path: '/quality' },
                 { name: 'Exports', path: '/exports' },

@@ -18,9 +18,9 @@ const Contact = () => {
         <meta name="description" content="Contact Siddhi Vinayak Polyester for general inquiries, support, and business partnerships." />
       </Helmet>
       
-      <div className="bg-primary-dark py-20 text-white">
+      <div className="bg-gradient-to-br from-primary-dark to-primary py-24 text-white">
         <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Contact Us</h1>
           <p className="text-xl text-gray-300">We'd love to hear from you</p>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Contact = () => {
             <div className="lg:w-2/5 bg-primary p-10 text-white flex flex-col justify-between">
               <div>
                 <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
-                <p className="text-primary-light mb-10 opacity-80">Whether you have a question about our products, pricing, or need technical support, our team is ready to answer all your questions.</p>
+                <p className="text-gray-300 mb-10 opacity-80">Whether you have a question about our products, pricing, or need technical support, our team is ready to answer all your questions.</p>
                 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">

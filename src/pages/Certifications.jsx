@@ -10,9 +10,9 @@ const Certifications = () => {
         <meta name="description" content="View our certifications including ISO 9001 and OEKO-TEX Standard 100." />
       </Helmet>
       
-      <div className="bg-primary-dark py-20 text-white">
+      <div className="bg-gradient-to-br from-primary-dark to-primary py-24 text-white">
         <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Certifications</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Our Certifications</h1>
           <p className="text-xl text-gray-300">Commitment to Global Standards</p>
         </div>
       </div>

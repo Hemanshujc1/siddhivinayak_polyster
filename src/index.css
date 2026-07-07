@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2c5282;
-  --color-primary-dark: #1e3a5f;
-  --color-accent: #dd6b20;
-  --color-accent-light: #f6ad55;
-  --color-neutral-light: #f7fafc;
-  --color-neutral-dark: #2d3748;
+  --color-primary: #1e293b;
+  --color-primary-dark: #0f172a;
+  --color-primary-light: #334155;
+  --color-accent: #2563eb;
+  --color-accent-light: #3b82f6;
+  --color-neutral-light: #f8fafc;
+  --color-neutral-dark: #0f172a;
+  --font-sans: 'Outfit', sans-serif;
 }
 
 body {
@@ -16,6 +19,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Headings inherit color from parent — do NOT force a global color */
 h1, h2, h3, h4, h5, h6 {
-  @apply text-primary font-medium;
+  @apply font-bold;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.4s ease both; }
+
+/* ── Brand Marquee / Infinite Scroll ── */
+@keyframes brand-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.brand-marquee {
+  animation: brand-scroll 28s linear infinite;
+  width: max-content;
+  padding: 0.5rem 0;
+}
+
+.brand-marquee:hover {
+  animation-play-state: paused;
 }

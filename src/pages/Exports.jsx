@@ -10,24 +10,24 @@ const Exports = () => {
         <meta name="description" content="Exporting premium polyester yarn to over 50 countries. Learn about our export documentation, incoterms, and global reach." />
       </Helmet>
       
-      <div className="bg-primary-dark py-20 text-white relative">
-        <ScrollThread pathsData={[
+      <div className="bg-gradient-to-br from-primary-dark to-primary py-24 text-white relative">
+        {/* <ScrollThread pathsData={[
           { d: "M 50 0 C 90 30, 90 70, 50 100", color: "var(--color-accent)", strokeWidth: 4 },
           { d: "M 45 0 C 10 40, 90 60, 45 100", color: "var(--color-primary-light)", strokeWidth: 3 },
           { d: "M 55 0 C 60 20, 10 80, 55 100", color: "rgba(255,255,255,0.2)", strokeWidth: 2 }
-        ]} />
+        ]} /> */}
         <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Global Exports</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Global Exports</h1>
           <p className="text-xl text-gray-300">Delivering Quality Yarn Worldwide</p>
         </div>
       </div>
 
       <section className="py-20 bg-neutral-light relative">
-        <ScrollThread pathsData={[
+        {/* <ScrollThread pathsData={[
           { d: "M 50 0 C 10 30, 50 70, 50 100", color: "var(--color-accent)", strokeWidth: 4 },
           { d: "M 45 0 C 90 20, 10 80, 45 100", color: "var(--color-primary)", strokeWidth: 3 },
           { d: "M 55 0 C 40 40, 90 60, 55 100", color: "var(--color-primary-dark)", strokeWidth: 2 }
-        ]} />
+        ]} /> */}
         <div className="container mx-auto px-4 md:px-6 max-w-5xl relative z-10">
           
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 md:p-12 mb-12 flex flex-col md:flex-row gap-10 items-center">
@@ -42,8 +42,7 @@ const Exports = () => {
             </div>
             <div className="md:w-1/2 w-full">
               <div className="aspect-video bg-blue-50 rounded-lg flex items-center justify-center border border-blue-100 relative overflow-hidden shadow-md">
-                <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c663be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Global Logistics" className="w-full h-full object-cover opacity-80" />
-                <div className="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+                <img src="/images/exports-shipping.png" alt="Global Logistics" className="w-full h-full object-cover" />
                 <Globe className="w-32 h-32 text-white/20 absolute -right-10 -bottom-10" />
                 <span className="text-white font-bold text-2xl relative z-10 drop-shadow-md">Ready for the World</span>
               </div>

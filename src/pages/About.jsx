@@ -37,13 +37,13 @@ const About = () => {
       </Helmet>
 
       {/* Page Header */}
-      <div className="bg-primary-dark py-20 text-white">
+      <div className="bg-gradient-to-br from-primary-dark to-primary py-24 text-white mt-16">
         <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
             About Siddhi Vinayak
           </h1>
-          <p className="text-xl text-gray-300">
-            Two Decades of Excellence in Polyester Yarn
+          <p className="text-xl text-blue-200">
+            Two Decades of Excellence in Polyester Yarn Solutions
           </p>
         </div>
       </div>
@@ -63,12 +63,10 @@ const About = () => {
                 weavers.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Over the past 20 years, we have grown from a modest trading
-                setup into a leading manufacturer and exporter of polyester
-                yarns in Maharashtra. Today, we proudly supply major Indian
-                brands and export our premium yarns globally, serving diverse
-                sectors including garments, knitwear, technical textiles, and
-                home furnishings.
+                Over the past 20 years, we have evolved into a comprehensive polyester yarn solution provider. Unlike many companies, our expertise combines <strong>in-house manufacturing of Draw Textured Yarn (DTY)</strong> with extensive <strong>trading operations for POY and FDY</strong>. 
+              </p>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                As authorized channel partners, we source directly from India's leading polyester manufacturers including Reliance Industries, Bhilosa Industries, and Wellknown Polyester. This unique hybrid model allows our customers—spanning textile mills, knitting units, and exporters—to obtain multiple brands and precise yarn specifications from one trusted supplier.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mt-10">
@@ -91,22 +89,22 @@ const About = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-200 rounded-xl aspect-[4/5] overflow-hidden shadow-sm">
                   <img
-                    src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                    alt="Factory Exterior"
+                    src="/images/about/dty-machinery.png"
+                    alt="DTY Winding Machinery"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="bg-gray-200 rounded-xl aspect-square overflow-hidden shadow-sm">
                     <img
-                      src="https://images.unsplash.com/photo-1620619767323-b95a89183081?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                      alt="Spinning Line"
+                      src="/images/about/machinery-detail.png"
+                      alt="Precision Texturizing Equipment"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="bg-gray-200 rounded-xl aspect-square overflow-hidden shadow-sm">
                     <img
-                      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                      src="/images/about/boardroom.png"
                       alt="Team"
                       className="w-full h-full object-cover"
                     />
@@ -128,11 +126,7 @@ const About = () => {
                 Our Mission
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                To continuously innovate and optimize our manufacturing
-                processes to deliver the highest quality polyester yarns. We
-                strive to empower our clients' supply chains through
-                reliability, competitive pricing, and uncompromising quality
-                control.
+                To continuously innovate our DTY manufacturing processes and leverage our strong mill partnerships to deliver the highest quality polyester yarns. We strive to empower our clients' supply chains through honest recommendations, competitive pricing, and a comprehensive product range.
               </p>
             </div>
             <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100">

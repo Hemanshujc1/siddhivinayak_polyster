@@ -34,24 +34,24 @@ const Quote = () => {
         <meta name="description" content="Request a bulk quote for our premium polyester yarns." />
       </Helmet>
       
-      <div className="bg-primary-dark py-20 text-white relative">
-        <ScrollThread pathsData={[
+      <div className="bg-gradient-to-br from-primary-dark to-primary py-24 text-white relative">
+        {/* <ScrollThread pathsData={[
           { d: "M 50 0 C 90 30, 90 70, 50 100", color: "var(--color-accent)", strokeWidth: 4 },
           { d: "M 45 0 C 10 40, 90 60, 45 100", color: "var(--color-primary-light)", strokeWidth: 3 },
           { d: "M 55 0 C 60 20, 10 80, 55 100", color: "rgba(255,255,255,0.2)", strokeWidth: 2 }
-        ]} />
+        ]} /> */}
         <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Request a Quote</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Request a Quote</h1>
           <p className="text-xl text-gray-300">Get competitive pricing for bulk polyester yarn</p>
         </div>
       </div>
 
       <section className="py-20 bg-neutral-light min-h-[60vh] relative">
-        <ScrollThread pathsData={[
+        {/* <ScrollThread pathsData={[
           { d: "M 50 0 C 10 30, 50 70, 50 100", color: "var(--color-accent)", strokeWidth: 4 },
           { d: "M 45 0 C 90 20, 10 80, 45 100", color: "var(--color-primary)", strokeWidth: 3 },
           { d: "M 55 0 C 40 40, 90 60, 55 100", color: "var(--color-primary-dark)", strokeWidth: 2 }
-        ]} />
+        ]} /> */}
         <div className="container mx-auto px-4 md:px-6 max-w-4xl relative z-10">
           
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12">

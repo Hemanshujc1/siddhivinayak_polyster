@@ -10,9 +10,9 @@ const Quality = () => {
         <meta name="description" content="Our stringent quality control processes ensure every cone of polyester yarn is perfect." />
       </Helmet>
       
-      <div className="bg-primary-dark py-20 text-white">
+      <div className="bg-gradient-to-br from-primary-dark to-primary py-24 text-white">
         <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Quality Assurance</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Quality Assurance</h1>
           <p className="text-xl text-gray-300">Precision Testing & Uncompromising Standards</p>
         </div>
       </div>
@@ -38,7 +38,7 @@ const Quality = () => {
               </ul>
             </div>
             <div className="bg-neutral-light rounded-xl overflow-hidden border border-gray-200 shadow-lg">
-              <img src="https://images.unsplash.com/photo-1558009250-d4d216245a45?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Quality Check" className="w-full h-full object-cover" />
+              <img src="/images/quality-testing.png" alt="Quality Check" className="w-full h-full object-cover" />
             </div>
           </div>
 

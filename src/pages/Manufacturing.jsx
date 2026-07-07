@@ -18,18 +18,28 @@ const Manufacturing = () => {
         <meta name="description" content="Discover our state-of-the-art polyester yarn manufacturing process from polymerization to melt spinning, texturing, and winding." />
       </Helmet>
       
-      <div className="bg-primary-dark py-20 text-white">
+      <div className="bg-gradient-to-br from-primary-dark to-primary py-24 text-white">
         <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Manufacturing Process</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Manufacturing Process</h1>
           <p className="text-xl text-gray-300">State-of-the-Art Production Facilities</p>
         </div>
       </div>
 
       <section className="py-20 bg-neutral-light">
         <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <p className="text-lg text-gray-700 text-center mb-16 max-w-3xl mx-auto">
-            Our manufacturing facilities are equipped with the latest technology from Barmag and TMT, ensuring high efficiency, consistency, and superior quality across our entire product range.
-          </p>
+          <div className="flex flex-col lg:flex-row gap-10 items-center mb-16">
+            <div className="flex-1">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Our manufacturing facilities are equipped with the latest technology from Barmag and TMT, ensuring high efficiency, consistency, and superior quality across our entire product range.
+              </p>
+              <p className="text-gray-600 mt-4 leading-relaxed">
+                By maintaining precise control over temperature, draw ratio, and speed, we ensure every batch of Draw Textured Yarn (DTY) meets strict tensile strength, elasticity, and intermingling knot counts.
+              </p>
+            </div>
+            <div className="flex-1 w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+              <img src="/images/manufacturing-plant.png" alt="State of the art Barmag texturizing lines" className="w-full h-full object-cover" />
+            </div>
+          </div>
 
           <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-1 before:bg-primary/20">
             {steps.map((step, i) => (
