@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import siddhiLogo from "../assets/brands/Siddhi-Vinayak-polyster-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,16 +27,15 @@ const Navbar = () => {
       isDropdown: true,
       items: [
         { name: "About Us", path: "/about" },
-        { name: "Manufacturing", path: "/manufacturing" },
-        { name: "Quality", path: "/quality" },
+        { name: "Manufacturing & Quality", path: "/manufacturing" },
         { name: "Certifications", path: "/certifications" },
-        { name: "Exports", path: "/exports" },
       ],
     },
     {
       name: "Products",
       isDropdown: true,
       items: [
+        { name: "All Products", path: "/products" },
         { name: "DTY (Draw Textured)", path: "/products/dty" },
         { name: "POY (Partially Oriented)", path: "/products/poy" },
         { name: "FDY (Fully Drawn)", path: "/products/fdy" },
@@ -43,7 +43,7 @@ const Navbar = () => {
       ],
     },
     { name: "Brand Partners", path: "/brands" },
-    { name: "Yarn Knowledge Center", path: "/products" },
+    { name: "Yarn Knowledge Center", path: "/yarn-knowledge-center" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -54,15 +54,15 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           {/* Logo Placeholder */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition-transform">
-              S
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="w-14 h-14 flex items-center justify-center group-hover:scale-105 transition-transform">
+              <img src={siddhiLogo} alt="siddhi logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-xl text-primary leading-tight">
+              <span className="font-bold text-2xl text-primary leading-none">
                 Siddhi Vinayak
               </span>
-              <span className="text-xs text-accent font-medium tracking-widest">
+              <span className="text-[11px] text-accent font-semibold tracking-[0.2em] mt-0.5">
                 POLYESTER
               </span>
             </div>
@@ -70,10 +70,12 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navLinks.map((link) => (
+            {navLinks.map((link) =>
               link.isDropdown ? (
                 <div key={link.name} className="relative group">
-                  <button className={`flex items-center text-sm font-medium hover:text-accent transition-colors ${link.items.some(item => location.pathname === item.path) ? 'text-accent' : 'text-neutral-dark'}`}>
+                  <button
+                    className={`flex items-center text-sm font-medium hover:text-accent transition-colors ${link.items.some((item) => location.pathname === item.path) ? "text-accent" : "text-neutral-dark"}`}
+                  >
                     {link.name}
                     <ChevronDown size={14} className="ml-1" />
                   </button>
@@ -82,7 +84,7 @@ const Navbar = () => {
                       <Link
                         key={item.name}
                         to={item.path}
-                        className={`block px-4 py-2 text-sm font-medium hover:bg-neutral-light hover:text-accent transition-colors ${location.pathname === item.path ? 'text-accent bg-neutral-light' : 'text-neutral-dark'}`}
+                        className={`block px-4 py-2 text-sm font-medium hover:bg-neutral-light hover:text-accent transition-colors ${location.pathname === item.path ? "text-accent bg-neutral-light" : "text-neutral-dark"}`}
                       >
                         {item.name}
                       </Link>
@@ -97,8 +99,8 @@ const Navbar = () => {
                 >
                   {link.name}
                 </Link>
-              )
-            ))}
+              ),
+            )}
             <Link
               to="/quote"
               className="bg-accent hover:bg-accent-light text-white px-6 py-2 rounded-full font-medium transition-colors shadow-sm hover:shadow"
@@ -127,7 +129,7 @@ const Navbar = () => {
             className="lg:hidden bg-white border-t mt-4 shadow-lg overflow-hidden"
           >
             <div className="flex flex-col px-6 py-4 space-y-4">
-              {navLinks.map((link) => (
+              {navLinks.map((link) =>
                 link.isDropdown ? (
                   <div key={link.name} className="flex flex-col space-y-2">
                     <div className="text-sm font-bold text-gray-400 uppercase tracking-wider">
@@ -138,7 +140,7 @@ const Navbar = () => {
                         <Link
                           key={item.name}
                           to={item.path}
-                          className={`block text-md font-medium ${location.pathname === item.path ? 'text-accent' : 'text-neutral-dark'}`}
+                          className={`block text-md font-medium ${location.pathname === item.path ? "text-accent" : "text-neutral-dark"}`}
                           onClick={() => setIsOpen(false)}
                         >
                           {item.name}
@@ -155,8 +157,8 @@ const Navbar = () => {
                   >
                     {link.name}
                   </Link>
-                )
-              ))}
+                ),
+              )}
               <div className="pt-4 border-t border-gray-100">
                 <Link
                   to="/quote"

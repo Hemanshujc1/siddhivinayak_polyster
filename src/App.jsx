@@ -6,11 +6,10 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
+import YarnKnowledgeCenter from "./pages/YarnKnowledgeCenter";
 import ProductDetail from "./pages/ProductDetail";
 import Manufacturing from "./pages/Manufacturing";
-import Quality from "./pages/Quality";
 import Certifications from "./pages/Certifications";
-import Exports from "./pages/Exports";
 import Contact from "./pages/Contact";
 import Quote from "./pages/Quote";
 import Dty from "./pages/Dty";
@@ -40,6 +39,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="products" element={<Products />} />
+            <Route path="yarn-knowledge-center" element={<YarnKnowledgeCenter />} />
             <Route path="brands" element={<Brands />} />
             <Route path="yarn-finder" element={<YarnFinder />} />
             <Route
@@ -67,9 +67,7 @@ function App() {
             <Route path="products/compare" element={<Compare />} />
             <Route path="products/:id" element={<ProductDetail />} />
             <Route path="manufacturing" element={<Manufacturing />} />
-            <Route path="quality" element={<Quality />} />
             <Route path="certifications" element={<Certifications />} />
-            <Route path="exports" element={<Exports />} />
             <Route path="contact" element={<Contact />} />
             <Route path="quote" element={<Quote />} />
           </Route>

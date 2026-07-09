@@ -80,7 +80,7 @@ const Dty = () => {
             {/* Quick verdict cards */}
             <div className="w-full md:w-72 space-y-3 shrink-0">
               <div className="bg-green-500/15 border border-green-400/30 rounded-xl p-4">
-                <div className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">✓ Best For</div>
+                <div className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Best For</div>
                 <div className="flex flex-wrap gap-1">
                   {['Knitting', 'Socks', 'Sportswear', 'Blankets', 'Fleece', 'Innerwear'].map(v => (
                     <span key={v} className="bg-white/10 text-white text-xs px-2 py-1 rounded-md">{v}</span>
@@ -88,7 +88,7 @@ const Dty = () => {
                 </div>
               </div>
               <div className="bg-red-500/15 border border-red-400/30 rounded-xl p-4">
-                <div className="text-red-300 text-xs font-bold uppercase tracking-wider mb-2">✕ Avoid If</div>
+                <div className="text-red-300 text-xs font-bold uppercase tracking-wider mb-2">Avoid If</div>
                 <div className="flex flex-wrap gap-1">
                   {['Zero stretch needed', 'High-gloss weaving', 'Industrial rope'].map(v => (
                     <span key={v} className="bg-white/10 text-white text-xs px-2 py-1 rounded-md">{v}</span>
@@ -203,7 +203,7 @@ const Dty = () => {
           {activeTab === 3 && (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {['Knitting Mills', 'Garment Manufacturers', 'Sock Factories', 'Blanket Manufacturers', 'Export Houses', 'Fabric Traders', 'Home Textile Mfrs.', 'Sportswear Brands'].map(b => (
-                <div key={b} className="bg-neutral-light p-4 rounded-xl border border-gray-100 text-center text-sm font-semibold text-primary-dark">
+                <div key={b} className="bg-primary-light p-4 rounded-xl border border-primary-light/20 text-center text-sm font-semibold text-white shadow-md hover:shadow-lg transition-all hover:scale-[1.02] duration-200">
                   {b}
                 </div>
               ))}

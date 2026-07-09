@@ -30,7 +30,7 @@ Change it to something like
 
 ## About Siddhi Vinayak Polyester
 
-For more than 20 years, Siddhi Vinayak Polyester has been supplying premium polyester yarn solutions to textile manufacturers across India.
+For more than 15 years, Siddhi Vinayak Polyester has been supplying premium polyester yarn solutions to textile manufacturers across India.
 
 Unlike many companies, our expertise combines **manufacturing and trading**, allowing us to recommend the right yarn instead of only selling one product.
 

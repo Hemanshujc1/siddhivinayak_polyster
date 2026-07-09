@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import { Link } from "react-router-dom";
 import { Settings, ShieldCheck, ArrowRight, Award } from "lucide-react";
 import { motion } from "framer-motion";
+import BrandsSection, { BrandScrollStrip } from "../components/BrandsSection";
 
 const Home = () => {
   const products = [
@@ -35,42 +36,47 @@ const Home = () => {
         </title>
         <meta
           name="description"
-          content="Siddhi Vinayak Polyester – 20 years of expertise. In-house DTY manufacturing and premium trading of POY and FDY from leading Indian mills."
+          content="Siddhi Vinayak Polyester – 15 years of expertise. In-house DTY manufacturing and premium trading of POY and FDY from leading Indian mills."
         />
       </Helmet>
 
       <Hero />
 
       {/* Tagline + Social Proof Strip */}
-      <div className="bg-primary-dark border-b border-white/10 py-4">
+      <div className="bg-primary-dark border-b border-white/10 py-8 md:py-10">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white font-bold text-lg tracking-wide text-center md:text-left">
+            <p className="text-white font-extrabold text-xl tracking-wide text-center md:text-left">
               Learn. <span className="text-blue-300">Compare.</span> Choose.{" "}
               <span className="text-accent">Source.</span>
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-300">
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-base font-semibold text-gray-200">
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span>
                 <span>
-                  <strong className="text-white">500+</strong> B2B Clients
+                  <strong className="text-white font-extrabold">500+</strong>{" "}
+                  B2B Clients
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-blue-400"></span>
                 <span>
-                  <strong className="text-white">20+</strong> Years Experience
+                  <strong className="text-white font-extrabold">15+</strong>{" "}
+                  Years Experience
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-purple-400"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-purple-400"></span>
                 <span>
-                  <strong className="text-white">15+</strong> Countries Served
+                  <strong className="text-white font-extrabold">15+</strong>{" "}
+                  Countries Served
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-yellow-400"></span>
-                <span>ISO 9001 Certified</span>
+                <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                <span className="text-white font-extrabold">
+                  ISO 9001 Certified
+                </span>
               </div>
             </div>
           </div>
@@ -130,6 +136,11 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Infinite Scrolling Marquee Section */}
+      <div className="bg-neutral-light border-b border-gray-200">
+        <BrandScrollStrip />
+      </div>
 
       {/* Trust & Certifications */}
       <section className="py-24 bg-gradient-to-b from-primary-dark to-primary text-white">

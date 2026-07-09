@@ -21,14 +21,14 @@ import relianceLogo from "../assets/brands/reliance.png";
 import bhilosaLogo from "../assets/brands/bhilosa.png";
 import wellknownLogo from "../assets/brands/wellknown.png";
 import sanathanlogo from "../assets/brands/sanathan.png";
-// import siddhiLogo      from '../assets/brands/siddhi-vinayak.png';
+import siddhiLogo from "../assets/brands/Siddhi-Vinayak-polyster-logo.png";
 
 export const brands = [
   {
     id: "siddhi-vinayak",
     name: "Siddhi Vinayak Polyester",
     shortName: "In-House DTY",
-    logo: null, // replace with: siddhiLogo
+    logo: siddhiLogo,
     initials: "SV",
     color: "#2563eb", // accent blue
     badge: "In-House Manufacturer",
@@ -46,7 +46,7 @@ export const brands = [
     badge: "Mill Partner",
     highlight: false,
     yarns: ["POY", "FDY"],
-    website: "https://www.ril.com",
+    website:null,
   },
   {
     id: "bhilosa",
